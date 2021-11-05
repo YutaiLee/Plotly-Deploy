@@ -144,7 +144,12 @@ function buildCharts(sample) {
           {range: [4,6], color:"#0000ff"},
           {range: [6,8], color:"#1e90ff"},
           {range: [8,10], color:"#00bfff"}
-        ]
+        ],
+        threshold: {
+          line: {color: 'white', width: 4},
+          thickness: 0.75,
+          value: 6
+      }
       }
     };
 
