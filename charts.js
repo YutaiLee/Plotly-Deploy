@@ -89,12 +89,16 @@ function buildCharts(sample) {
     var labels = otuLabs.slice(0,10).reverse();
 
     // Create the trace for the bar chart. 
+    var colors = ['#fff100', '#ff8c00', '#e81123', '#ec008c', '#68217a', '#00188f', '#00bcf2', '#00b294', '#009e49', '#bad80a']
     var barData = {
       x: xticks,
       y: yticks,
       type: 'bar',
       orientation: 'h',
-      text: labels
+      text: labels,
+      marker: {
+          color: colors
+      }
     };
     // Create the layout for the bar chart. 
     var barLayout = {
