@@ -146,7 +146,7 @@ function buildCharts(sample) {
           {range: [8,10], color:"#00bfff"}
         ],
         threshold: {
-          line: {color: '#FFFFFF', width: 4},
+          line: {color: 'red', width: 4},
           thickness: 0.75,
           value: 6
       }
